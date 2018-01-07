@@ -2,10 +2,9 @@ doctype html
 html
   head
     title webpack demo
-    script(src="./app.js")
   body
     h1#title Hi
-    button#startBtn(onclick = 'start()') start
+    button#startBtn start
     #container
       #time
         #totalTime.total
@@ -49,3 +48,5 @@ html
           p#ytKm.km 0
           p#ytM.m 0
           p#ytCm.cm 0
+
+    script(src="./app.js")
