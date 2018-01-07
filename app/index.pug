@@ -2,6 +2,50 @@ doctype html
 html
   head
     title webpack demo
+    script(src="./app.js")
   body
     h1#title Hi
-    script(src="./main.js")
+    button#startBtn(onclick = 'start()') start
+    #container
+      #time
+        #totalTime.total
+          p#totalHr.hr 0
+          p#totalMin.min 0
+          p#totalSec.sec 0
+        #fbTime.fb
+          p#fbHr.hr 0
+          p#fbMin.min 0
+          p#fbSec.sec 0
+        #igTime.ig
+          p#igHr.hr 0
+          p#igMin.min 0
+          p#igSec.sec 0
+        #lineTime.line
+          p#lineHr.hr 0
+          p#lineMin.min 0
+          p#lineSec.sec 0
+        #ytTime.yt
+          p#ytHr.hr 0
+          p#ytMin.min 0
+          p#ytSec.sec 0
+      #dist
+        #totalDist.total
+          p#totalKm.km 0
+          p#totalM.m 0
+          p#totalCm.cm 0
+        #fbDist.fb
+          p#fbKm.km 0
+          p#fbM.m 0
+          p#fbCm.cm 0
+        #igDist.ig
+          p#igKm.km 0
+          p#igM.m 0
+          p#igCm.cm 0
+        #lineDist.line
+          p#lineKm.km 0
+          p#lineM.m 0
+          p#lineCm.vm 0
+        #ytDist.yt
+          p#ytKm.km 0
+          p#ytM.m 0
+          p#ytCm.cm 0
