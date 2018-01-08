@@ -1,20 +1,60 @@
-h1
-  text-align: center
-.label
-  font-weight: bold
-#time, #dist
-  border-style: dotted
-  border-color: black
-#totalTime, #totalDist
-  color: black
-.hr, .min, .sec, .km, .m, .cm, .unit
-  display: inline
+body
+  background: url(http://www.planetware.com/photos-large/P/belem-tower.jpg) center center / cover
 
-#fbTime, #fbDist
-  color: blue
-#igTime, #igDist
-  color: brown
-#lineTime, #lineDist
-  color: green
-#ytTime, #ytDist
-  color: red
+#content
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+
+.-right
+  text-align: right
+
+  button.ui.button
+    margin-right: .5em
+
+#total
+  background-color: rgba(0, 0, 0, .5)
+  border-bottom: 1px solid rgba(255, 255, 255, .25)
+  color: white
+  display: flex
+  margin-top: .5em
+  padding: .5em
+
+  > *
+    align-items: center
+    display: flex
+    flex: 1 1 auto
+    justify-content: space-around
+
+    &:first-child
+      margin-right: 1em
+
+    > *
+      flex: 0 0 auto
+      margin-right: 0
+      text-align: center
+
+#apps
+  display: flex
+
+  > *
+    color: white
+    flex: 1 1 10em
+    padding: .5em 0 1em
+    text-align: center
+
+    &:nth-child(1)
+      background-color: rgba(0, 0, 0, .65)
+
+    &:nth-child(2)
+      background-color: rgba(0, 0, 0, .55)
+
+    &:nth-child(3)
+      background-color: rgba(0, 0, 0, .45)
+
+    &:nth-child(4)
+      background-color: rgba(0, 0, 0, .35)
+
+#time, #dist
+  display: none
