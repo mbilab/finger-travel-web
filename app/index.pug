@@ -1,9 +1,11 @@
 doctype html
 html
   head
+    meta(charset="utf-8")
+    meta(content="width=device-width,initial-scale=1",name="viewport")
     title webpack demo
-  body
-    button#startBtn start
+  body: .ui.container
+    button.ui.button#startBtn Start
     #container
       #time
         #totalTime.total
@@ -107,4 +109,4 @@ html
           p.unit  Cm 
           br
           br
-    script(src="./main.js")
+    script(src="./app.js")
