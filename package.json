@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "webpack --progress",
-    "start": "webpack-dev-server --port 20000 --progress"
+    "start": "webpack-dev-server --progress --port 20002"
   },
   "license": "All rights reserved",
   "dependencies": {

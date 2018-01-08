@@ -6,6 +6,7 @@ module.exports = {
     allowedHosts: ['merry.ee.nkcu.edu.tw', 'zoro.ee.ncku.edu.tw'],
     contentBase: false,
     host: '0.0.0.0',
+    public: 'merry.ee.ncku.edu.tw:20002',
     stats: { colors: true, modules: false },
   },
   entry: './app/app.js',
