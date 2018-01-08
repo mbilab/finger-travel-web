@@ -1,11 +1,10 @@
+import './index.pug'
+import './app.sass'
+import 'semantic-ui/dist/semantic.css'
+window.$ = window.jQuery = require('jquery')
+require('semantic-ui/dist/semantic.js')
+
 $(document).ready(function(){
-  import './index.pug'
-  import './app.sass'
-  import 'semantic-ui/dist/semantic.css'
-
-  window.$ = window.jQuery = require('jquery')
-  require('semantic-ui/dist/semantic.js')
-
   function getinfo(){
     var info = AndroidInterface.getInfo();
     if(info != undefined){
@@ -42,15 +41,13 @@ $(document).ready(function(){
       document.getElementById("ytM").innerHTML  = info_obj["dist"]["youtube"]["m"];
       document.getElementById("ytCm").innerHTML  = info_obj["dist"]["youtube"]["cm"];
     }
-    var flag = false;
-    $('#startBtn').click(){
-      flag = !flag;
-      AndroidInterface.StartService(flag);
-      //if(flag == True){
-        //document.getElementById("startBtn") = 'Stop';
-        //}
-      window.setInterval(function(){getinfo()}, 1000);
-    }
-
   }
+  var flag = false;
+  $('#startBtn').click(function(){
+    console.log('click');
+    flag = !flag;
+    AndroidInterface.StartService(flag);
+    window.setInterval(function(){getinfo()}, 1000);
+  });
+
 });
