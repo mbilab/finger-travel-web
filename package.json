@@ -6,7 +6,7 @@
     "build": "webpack --progress",
     "start": "webpack-dev-server --progress --port 20002"
   },
-  "license": "All rights reserved",
+  "license": "MIT",
   "dependencies": {
     "autoprefixer": "^7.1.6",
     "css-loader": "^0.28.7",

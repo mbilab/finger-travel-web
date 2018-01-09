@@ -1,5 +1,7 @@
+$bg-clr: rgb(68, 12, 51)
+
 body
-  background: url(http://www.planetware.com/photos-large/P/belem-tower.jpg) center center / cover
+  background: url(background.jpg) center center / cover
 
 #content
   position: absolute
@@ -11,10 +13,19 @@ body
   text-align: right
 
   button.ui.button
+    background-color: rgba($bg-clr, .4)
+    height: 3.5em
     margin-right: .5em
+    padding-left: 0
+    padding-right: 0
+    width: 3.5em
+
+    &:focus
+      background-color: rgba($bg-clr, .4)
+      color: white
 
 #total
-  background-color: rgba(0, 0, 0, .5)
+  background-color: rgba($bg-clr, .4)
   border-bottom: 1px solid rgba(255, 255, 255, .25)
   color: white
   display: flex
@@ -41,20 +52,20 @@ body
   > *
     color: white
     flex: 1 1 10em
-    padding: .5em 0 1em
+    padding: 1em 0
     text-align: center
 
     &:nth-child(1)
-      background-color: rgba(0, 0, 0, .65)
+      background-color: rgba($bg-clr, .55)
 
     &:nth-child(2)
-      background-color: rgba(0, 0, 0, .55)
+      background-color: rgba($bg-clr, .45)
 
     &:nth-child(3)
-      background-color: rgba(0, 0, 0, .45)
+      background-color: rgba($bg-clr, .35)
 
     &:nth-child(4)
-      background-color: rgba(0, 0, 0, .35)
+      background-color: rgba($bg-clr, .25)
 
-#time, #dist
-  display: none
+    > .icon
+      font-size: 3em

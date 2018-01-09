@@ -50,6 +50,10 @@ $(document).ready(() => {
   $('#startBtn').click(() => {
     console.log('click')
     flag = !flag
+    if (flag)
+      $('#startBtn').addClass('loading')
+    else
+      $('#startBtn').removeClass('loading')
     if (typeof AndroidInterface === 'undefined') return
     AndroidInterface.StartService(flag)
   })
