@@ -1,4 +1,3 @@
-import '!file-loader?name=index.html!extract-loader!html-loader!pug-html-loader!./index.pug'
 import 'semantic-ui-offline/semantic.css'
 import './app.sass'
 window.$ = window.jQuery = require('jquery')
